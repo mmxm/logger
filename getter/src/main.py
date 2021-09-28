@@ -32,14 +32,14 @@ while True:
     # data = pd.DataFrame(val)
     # print(data.memory_usage())
 
-    val = mydb["transfer_cycle"]\
-        .find({"timestamp": {'$gte': datetime.datetime(2021, 9, 25, 00, 46, 00)}}, sort=[("timestamp", -1)])
-    data = pd.DataFrame(list(val))
-    print(len(data))
-    print(data)
-    print(np.arange(len(data)) // 5)
-    data = data.groupby(np.arange(len(data)) // 5).mean()
-    print(data)
+    # val = mydb["transfer_cycle"]\
+    #     .find({"timestamp": {'$gte': datetime.datetime(2021, 9, 25, 00, 46, 00)}}, sort=[("timestamp", -1)])
+    # data = pd.DataFrame(list(val))
+    # print(len(data))
+    # print(data)
+    # print(np.arange(len(data)) // 5)
+    # data = data.groupby(np.arange(len(data)) // 5).mean()
+    # print(data)
     # print(pd1)
     # print(val["count"])
 
